@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/fcf8266609.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To-Do list | #2 Project</title>
+  </head>
+  <body>
+    <main
+      class="bg-gradient-to-r from-[#0d0d45] to-[#2b59b8] w-screen h-screen justify-center flex"
+    >
+      <section class="flex flex-col items-center gap-3 pt-5 w-[60%]">
+        <h1 class="text-3xl font-bold text-white">TODO List</h1>
+
+        <!-- ? First Section -->
+        <section
+          class="upper-section flex flex-col bg-white w-[90%] rounded-xl shadow-lg shadow-black/20 items-center p-6 gap-4"
+        >
+          <label for="todoItem" class="hidden">"</label>
+          <input
+            type="text"
+            name="todoItem"
+            id="todoItem"
+            placeholder="What would you like to do?"
+            class="bg-inherit text-black placeholder:text-black/50 placeholder:select-none border-b border-spacing-y-8 border-[#2b59b8] focus:outline-none w-[70%] p-2"
+          />
+          <button
+            type="button"
+            role="button"
+            class="bg-[#EF6538] py-2 px-24 text-white rounded-md shadow-lg shadow-[#EF6538]/70"
+          >
+            Add
+          </button>
+        </section>
+
+        <!-- ? Second Section -->
+        <section
+          class="lower-section flex flex-col bg-white w-[90%] rounded-xl shadow-lg shadow-black/20 items-center py-6 gap-4"
+        >
+          <h1 class="font-bold place-self-start ml-4">TODO List</h1>
+
+          <!-- ! List Items -->
+          <div class="todoitemasWhole flex flex-col w-full">
+            <div
+              class="title bg-slate-200 w-full flex px-8 py-4 text-black/60 justify-between"
+            >
+              <span>List</span>
+              <span>Close</span>
+            </div>
+            <div class="toDoitemAsAlone px-3 py-6 justify-between flex">
+              <div class="task">
+                <input type="checkbox" name="checkbox" id="checkbox" class="" />
+                <label for="checkbox" class="select-none"
+                  >This is Example</label
+                >
+              </div>
+              <i
+                class="fa-regular fa-trash-can mr-8 text-red-600 cursor-pointer scale-150 h-fit"
+              ></i>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
